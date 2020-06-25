@@ -3247,7 +3247,7 @@ public class ITStorageTest {
 
       // Disable bucket logging.
       Bucket updatedBucket = bucket.toBuilder().setLogging(null).build().update();
-      assertThat(updatedBucket.getLogging()).isNull();
+      assertNull(updatedBucket.getLogging());
 
     } finally {
       RemoteStorageHelper.forceDelete(storage, logsBucket, 5, TimeUnit.SECONDS);
