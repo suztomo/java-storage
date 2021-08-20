@@ -1,0 +1,8 @@
+# Each line should be a full test name
+# Each test name present in the file will be expected to pass in a CI environment
+#
+# If you have an xunit.xml of the test results, you can select the passing test
+# by running:
+#    xq '//suite[@status="passed"]/@name' test-results.xml | tail -n+2 | head -n-1 | sed 's#  <result>\[##g' | sed 's#\]</result>##g' | sort | tee -a google-cloud-storage/src/test/resources/com/google/cloud/storage/conformance/retry/testNamesWhichShouldSucceed.txt
+# where xq is the package from https://github.com/jeffbr13/xq
+
